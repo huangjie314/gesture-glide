@@ -11,7 +11,7 @@
         var app = {
             init: function(){
                 if(/(window)/i.test(navigator.userAgent)){
-                    location.href = 'pc.html';
+                    location.href = 'view/pc.html';
                 }
                 document.addEventListener('DOMContentLoaded',function(){
                     _opt.points = document.querySelectorAll('.pagenumber div');
