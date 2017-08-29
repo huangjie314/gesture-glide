@@ -1,0 +1,78 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: Arial;
+    position: relative;
+}
+.viewport{
+    width: 500%;
+    height: 100%;
+    display: -webkit-box;
+    display: box;
+    overflow: hidden;
+    transform: translate3d(0,0,0);
+    -webkit-transform: translate3d(0,0,0);
+    backface-visibility: hidden;
+}
+.viewport .pageview{
+    -webkit-box-flex: 1;
+}
+.pagenumber{
+    position: absolute;
+    display: -webkit-box;
+    bottom: 2em;
+    left:35%;
+    height: 2%;
+    width: 30%;
+}
+.pagenumber div{
+    -webkit-box-flex:1;
+    position:relative;
+}
+.pagenumber div:after{
+    position: absolute;
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: rgba(255,255,255,0.5);
+    border-radius: 100%;
+    top:50%;
+    left:50%;
+    margin-top: -0.2em;
+    margin-left:-0.2em;
+}
+.pagenumber div.now:after{
+    background: rgba(255,255,255,1);
+}
+h3{
+    text-align: center;
+    font-family: Microsoft YaHei,Arial;
+    color: #fff;
+    font-size: 1.7em;
+    font-weight: normal;
+    padding: 1em 0;
+    margin:0;
+}
+@media screen and (max-width:360px){
+    html,body{
+        font-size: 15px;
+    }
+}
+@media screen and (min-width: 360px) and (max-width: 400px){
+    html,body{
+        font-size: 16px;
+    }
+}
+@media screen and(min-width: 400px) and (max-width: 460px){
+    html,body{
+        font-size: 18px;
+    }
+}
+@media screen and (min-width: 460px){
+    html,body{
+        font-size: 24px;
+    }
+}
